@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace ShopOnWeb.ApplicationCore.Interfaces
 {
-    public interface IOrderRepositoy : IAsyncRepository<Order>
+    public interface IOrderRepository : IAsyncRepository<Order>
     {
         Task<Order> GetByIdWithItemsAsync(int id);
     }
